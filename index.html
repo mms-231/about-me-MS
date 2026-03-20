@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/Rust-eze.avif" rel="icon" type="image/avif">
+    <title>About Me - Mary Schlueter</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p class="page-subtitle">Mary Schlueter</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <main class="home-page">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Student • Creator • Builder</p>
+                <h2>Hello, I’m Mary.</h2>
+                <p>
+                    Welcome to my About Me page. I am a student at <strong>Brigham Young University</strong>,
+                    and I enjoy both creative and hands-on work. This site shares a little about my
+                    background, interests, and experiences.
+                </p>
+                <p id="greeting"></p>
+            </div>
+
+            <div class="hero-card">
+                <h3>Quick Snapshot</h3>
+                <ul>
+                    <li>BYU student</li>
+                    <li>Technology and Engineering major</li>
+                    <li>Raised on a farm in Northeast Iowa</li>
+                    <li>Interested in art, design, and building projects</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="content-card">
+                <h2>Education</h2>
+                <p>
+                    I am currently studying <strong>Technology and Engineering</strong> at BYU.
+                    My classes have helped me build skills in problem solving, design, and technical work.
+                </p>
+                <p>
+                    I enjoy learning in ways that combine creativity with practical application.
+                    That is one reason this major fits me so well.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="content-card">
+                <h2>Background</h2>
+                <p>
+                    I was born and raised on a small farm in Northeast Iowa with my mom, dad,
+                    and five siblings. Growing up there taught me the value of hard work,
+                    responsibility, and family.
+                </p>
+                <p>
+                    We raised dairy and beef cows, along with several dogs. Life on a farm gave me
+                    many opportunities to learn by doing and to appreciate where I come from.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="content-card">
+                <h2>Interests and Hobbies</h2>
+                <p>
+                    I enjoy a variety of creative projects, including <em>art, woodworking, quilting,
+                    and design</em>. I like making things that are both meaningful and useful.
+                </p>
+                <p>
+                    I also enjoy photography and creating projects that let me combine technical skill
+                    with personal expression. My portfolio page shows some examples of the work I have done.
+                </p>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <div class="section-heading">
+                <h2>Where I’m From</h2>
+                <p>A few images and moments that reflect home and the environment I grew up in.</p>
+            </div>
+
+            <div class="featured-media">
+                <figure class="media-card">
+                    <img src="images/Winter Wonderland.jpg" alt="My gravel road in the winter">
+                    <figcaption>Winter on the gravel road back home.</figcaption>
+                </figure>
+
+                <figure class="media-card">
+                    <img src="images/home.jpg" alt="Rainbow over our hayfield">
+                    <figcaption>A rainbow over our hayfield.</figcaption>
+                </figure>
+
+                <figure class="media-card video-card">
+                    <video controls>
+                        <source src="images/Stormy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>A stormy day at home.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>&copy; Copyright Mary Schlueter &#128004; 2026</h3>
+    </footer>
+
+    <script>
+        const greeting = document.getElementById("greeting");
+        const hour = new Date().getHours();
+
+        if (hour < 12) {
+            greeting.textContent = "Good morning, and thanks for visiting my page.";
+        } else if (hour < 18) {
+            greeting.textContent = "Good afternoon, and thanks for visiting my page.";
+        } else {
+            greeting.textContent = "Good evening, and thanks for visiting my page.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/Rust-eze.avif" rel="icon" type="image/avif">
+    <title>My Portfolio - Mary Schlueter</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <h1>Behold, My Works of Art!</h1>
+        <p class="page-subtitle">Artwork, woodworking, photography, and design projects</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <main class="portfolio-page">
+        <section class="portfolio-intro">
+            <h2>Portfolio Gallery</h2>
+            <p>Click any image to view it larger and read more about the project.</p>
+        </section>
+
+        <section class="filter-bar">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="woodworking" type="button">Woodworking</button>
+            <button class="filter-btn" data-filter="painting" type="button">Painting</button>
+            <button class="filter-btn" data-filter="drawing" type="button">Drawing</button>
+            <button class="filter-btn" data-filter="photography" type="button">Photography</button>
+            <button class="filter-btn" data-filter="design" type="button">Design</button>
+            <button class="filter-btn" data-filter="fiber-art" type="button">Fiber Art</button>
+        </section>
+
+        <section id="gallery" class="gallery">
+
+            <article class="card" data-category="painting">
+                <button class="card-button" type="button"
+                    data-image="images/Blossoms.jpg"
+                    data-title="Cherry Blossoms"
+                    data-description="A painted mountain scene with cherry blossoms in the foreground.">
+                    <img src="images/Blossoms.jpg" alt="Painting of cherry blossoms in front of a mountain">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Painting</span>
+                    <h3>Cherry Blossoms</h3>
+                    <p>A painted mountain scene with cherry blossoms in the foreground.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/Box.jpg"
+                    data-title="Engraved Box"
+                    data-description="A woodworking box project with engraved lettering on the lid.">
+                    <img src="images/Box.jpg" alt="Wooden box project">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Engraved Box</h3>
+                    <p>A woodworking box project with engraved lettering on the lid.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="drawing">
+                <button class="card-button" type="button"
+                    data-image="images/Friend Drawings.jpg"
+                    data-title="Friend Drawings"
+                    data-description="Colored pencil drawings created as character and portrait studies.">
+                    <img src="images/Friend Drawings.jpg" alt="Colored pencil medium drawing">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Drawing</span>
+                    <h3>Friend Drawings</h3>
+                    <p>Colored pencil drawings created as character and portrait studies.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/Ice-Cream.jpg"
+                    data-title="Turned Ice Cream Scoop"
+                    data-description="A woodworking project featuring a turned handle for an ice cream scoop.">
+                    <img src="images/Ice-Cream.jpg" alt="Ice-cream scoop, woods 2024">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Turned Ice Cream Scoop</h3>
+                    <p>A woodworking project featuring a turned handle for an ice cream scoop.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/Mountains.jpg"
+                    data-title="Mountain Mosaic"
+                    data-description="A wood mosaic project featuring layered mountain shapes and color variation.">
+                    <img src="images/Mountains.jpg" alt="Wood mosaic of mountains">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Mountain Mosaic</h3>
+                    <p>A wood mosaic project featuring layered mountain shapes and color variation.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="fiber-art">
+                <button class="card-button" type="button"
+                    data-image="images/Quilt.jpg"
+                    data-title="T-Shirt Quilt"
+                    data-description="An in-progress quilt made from collected T-shirts.">
+                    <img src="images/Quilt.jpg" alt="T-shirt quilt in progress">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Fiber Art</span>
+                    <h3>T-Shirt Quilt</h3>
+                    <p>An in-progress quilt made from collected T-shirts.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/Side Table Drawer.jpg"
+                    data-title="Side Table Project"
+                    data-description="A woodworking project featuring a side table or drawer unit.">
+                    <img src="images/Side Table Drawer.jpg" alt="Woods project 2024">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Side Table Project</h3>
+                    <p>A woodworking project featuring a side table or drawer unit.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="painting">
+                <button class="card-button" type="button"
+                    data-image="images/Stark Tower.jpg"
+                    data-title="Stark Tower"
+                    data-description="A painted artwork inspired by Stark Tower with a dramatic sky background.">
+                    <img src="images/Stark Tower.jpg" alt="Stark Tower painting">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Painting</span>
+                    <h3>Stark Tower</h3>
+                    <p>A painted artwork inspired by Stark Tower with a dramatic sky background.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/box 2.jpg"
+                    data-title="Keepsake Box"
+                    data-description="A finished wooden keepsake box with engraved name detail.">
+                    <img src="images/box 2.jpg" alt="Box with engraved name on lid">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Keepsake Box</h3>
+                    <p>A finished wooden keepsake box with engraved name detail.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="design">
+                <button class="card-button" type="button"
+                    data-image="images/Fox and Friends.jpg"
+                    data-title="Fox and Friends"
+                    data-description="An Illustrator-based drawing featuring a fox and companion characters.">
+                    <img src="images/Fox and Friends.jpg" alt="Drawing of a fox on Illustrator">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Design</span>
+                    <h3>Fox and Friends</h3>
+                    <p>An Illustrator-based drawing featuring a fox and companion characters.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="design">
+                <button class="card-button" type="button"
+                    data-image="images/Dinoco.jpg"
+                    data-title="Dinoco Shoes"
+                    data-description="Custom painted shoes inspired by Dinoco and The King from Cars.">
+                    <img src="images/Dinoco.jpg" alt="Custom made Dinoco The King shoes">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Design</span>
+                    <h3>Dinoco Shoes</h3>
+                    <p>Custom painted shoes inspired by Dinoco and The King from Cars.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/Closed doors.jpg"
+                    data-title="Coffee Table - Closed"
+                    data-description="A custom coffee table shown with both tambour doors closed.">
+                    <img src="images/Closed doors.jpg" alt="Coffee table with doors closed">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Coffee Table - Closed</h3>
+                    <p>A custom coffee table shown with both tambour doors closed.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/Full table.jpg"
+                    data-title="Coffee Table - Full View"
+                    data-description="A full view of the custom coffee table design and construction.">
+                    <img src="images/Full table.jpg" alt="Full view of custom made coffee table">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Coffee Table - Full View</h3>
+                    <p>A full view of the custom coffee table design and construction.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/one open one shut.jpg"
+                    data-title="Coffee Table - Door Detail"
+                    data-description="One tambour door open and one closed to show the storage design.">
+                    <img src="images/one open one shut.jpg" alt="Coffee table showing one tambour door open and one shut">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Coffee Table - Door Detail</h3>
+                    <p>One tambour door open and one closed to show the storage design.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="woodworking">
+                <button class="card-button" type="button"
+                    data-image="images/legs.jpg"
+                    data-title="Coffee Table - Leg Detail"
+                    data-description="A close-up detail view of the coffee table legs and base.">
+                    <img src="images/legs.jpg" alt="Legs of the coffee table">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Woodworking</span>
+                    <h3>Coffee Table - Leg Detail</h3>
+                    <p>A close-up detail view of the coffee table legs and base.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="photography">
+                <button class="card-button" type="button"
+                    data-image="images/flagsunset.jpg"
+                    data-title="Flag at Sunset"
+                    data-description="A photograph of an American flag silhouetted against a vivid sunset sky.">
+                    <img src="images/flagsunset.jpg" alt="American flag in front of a sunset">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Photography</span>
+                    <h3>Flag at Sunset</h3>
+                    <p>A photograph of an American flag silhouetted against a vivid sunset sky.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="photography">
+                <button class="card-button" type="button"
+                    data-image="images/mountain.jpg"
+                    data-title="Mountain View"
+                    data-description="A landscape photograph featuring mountains and a road at dusk.">
+                    <img src="images/mountain.jpg" alt="Picture of mountains">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Photography</span>
+                    <h3>Mountain View</h3>
+                    <p>A landscape photograph featuring mountains and a road at dusk.</p>
+                </div>
+            </article>
+
+            <article class="card" data-category="photography">
+                <button class="card-button" type="button"
+                    data-image="images/planespot.jpg"
+                    data-title="Plane Spotting"
+                    data-description="A photograph of an airplane approaching against an evening sky.">
+                    <img src="images/planespot.jpg" alt="Airplane near Provo Airport at sunset">
+                </button>
+                <div class="card-text">
+                    <span class="card-tag">Photography</span>
+                    <h3>Plane Spotting</h3>
+                    <p>A photograph of an airplane approaching against an evening sky.</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button id="closeLightbox" class="lightbox-close" type="button">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-text">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>&copy; Copyright Mary Schlueter &#128004; 2026</h3>
+    </footer>
+
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightboxImage");
+        const lightboxTitle = document.getElementById("lightboxTitle");
+        const lightboxDescription = document.getElementById("lightboxDescription");
+        const closeLightbox = document.getElementById("closeLightbox");
+        const cardButtons = document.querySelectorAll(".card-button");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".card");
+
+        cardButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                lightboxImage.src = button.dataset.image;
+                lightboxImage.alt = button.querySelector("img").alt;
+                lightboxTitle.textContent = button.dataset.title;
+                lightboxDescription.textContent = button.dataset.description;
+                lightbox.classList.add("open");
+                lightbox.setAttribute("aria-hidden", "false");
+            });
+        });
+
+        closeLightbox.addEventListener("click", () => {
+            lightbox.classList.remove("open");
+            lightbox.setAttribute("aria-hidden", "true");
+        });
+
+        lightbox.addEventListener("click", (event) => {
+            if (event.target === lightbox) {
+                lightbox.classList.remove("open");
+                lightbox.setAttribute("aria-hidden", "true");
+            }
+        });
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const filter = button.dataset.filter;
+
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                cards.forEach(card => {
+                    if (filter === "all" || card.dataset.category === filter) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
